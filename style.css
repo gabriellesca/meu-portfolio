@@ -1026,3 +1026,172 @@ footer a:hover { color: var(--pink); }
   .stats-grid  { grid-template-columns: 1fr 1fr; }
   .lang-grid   { flex-direction: column; }
 }
+/* =============================================
+   NOVOS ESTILOS — PROJETOS ACADÊMICOS + SKILLS
+   ============================================= */
+
+/* Skills grid 5 colunas */
+.skills-grid-5 {
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.2rem;
+}
+
+.skill-cat.backend { --cat-clr: #00b4d8; }
+.skill-cat.banco   { --cat-clr: #f77f00; }
+.skill-cat.mobile  { --cat-clr: #3ddc84; }
+
+/* Projetos — links row */
+.proj-links-row {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.proj-link-gh {
+  font-size: .78rem;
+  font-weight: 600;
+  color: rgba(255,255,255,.45);
+  text-decoration: none;
+  letter-spacing: .04em;
+  transition: color .2s;
+}
+.proj-link-gh:hover { color: var(--pink); }
+
+/* Cover buscador de filmes */
+.cv-filmes {
+  background: linear-gradient(135deg, #0d1b2a 0%, #1a3a5c 50%, #01b4e4 100%);
+}
+
+/* =============================================
+   SEÇÃO ACADÊMICA
+   ============================================= */
+#academico { background: var(--bg-section); }
+
+.acad-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.4rem;
+  margin-top: 3rem;
+}
+
+.acad-card {
+  background: rgba(255,255,255,.03);
+  border: 1px solid rgba(255,255,255,.08);
+  border-radius: 18px;
+  padding: 1.6rem;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  gap: .75rem;
+  transition: transform .25s ease, border-color .25s ease, background .25s ease, box-shadow .25s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.acad-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(247,37,133,.04) 0%, transparent 60%);
+  opacity: 0;
+  transition: opacity .3s;
+  border-radius: inherit;
+}
+
+.acad-card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(247,37,133,.35);
+  background: rgba(255,255,255,.06);
+  box-shadow: 0 20px 40px rgba(0,0,0,.3), 0 0 0 1px rgba(247,37,133,.15);
+}
+
+.acad-card:hover::before { opacity: 1; }
+
+.acad-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: .5rem;
+}
+
+.acad-icon {
+  font-size: 1.8rem;
+  line-height: 1;
+}
+
+.acad-tags {
+  display: flex;
+  gap: .4rem;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.acad-tag {
+  font-size: .65rem;
+  font-weight: 700;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  padding: .25rem .6rem;
+  border-radius: 20px;
+}
+
+.tag-sql   { background: rgba(68,121,161,.25); color: #74b9e8; border: 1px solid rgba(68,121,161,.4); }
+.tag-py    { background: rgba(55,118,171,.25); color: #7fbfff; border: 1px solid rgba(55,118,171,.4); }
+.tag-php   { background: rgba(119,91,180,.25); color: #c4a8ff; border: 1px solid rgba(119,91,180,.4); }
+.tag-java  { background: rgba(237,139,0,.2);   color: #ffa94d; border: 1px solid rgba(237,139,0,.35); }
+.tag-uml   { background: rgba(247,37,133,.15); color: #ff85b3; border: 1px solid rgba(247,37,133,.3); }
+.tag-linux { background: rgba(61,220,132,.15); color: #5af0a0; border: 1px solid rgba(61,220,132,.3); }
+
+.acad-title {
+  font-family: 'Syne', sans-serif;
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #fff;
+  margin: 0;
+  line-height: 1.3;
+}
+
+.acad-desc {
+  font-size: .875rem;
+  color: rgba(255,255,255,.55);
+  line-height: 1.65;
+  margin: 0;
+  flex: 1;
+}
+
+.acad-link {
+  font-size: .78rem;
+  font-weight: 700;
+  color: var(--pink);
+  letter-spacing: .04em;
+  transition: letter-spacing .2s;
+  margin-top: .25rem;
+}
+
+.acad-card:hover .acad-link {
+  letter-spacing: .08em;
+}
+
+/* Delay de reveal para os cards acadêmicos */
+.acad-card.d1 { transition-delay: 0s; }
+.acad-card.d2 { transition-delay: .05s; }
+.acad-card.d3 { transition-delay: .1s; }
+.acad-card.d4 { transition-delay: .15s; }
+.acad-card.d5 { transition-delay: .2s; }
+.acad-card.d6 { transition-delay: .25s; }
+.acad-card.d7 { transition-delay: .3s; }
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .acad-grid {
+    grid-template-columns: 1fr;
+  }
+  .skills-grid-5 {
+    grid-template-columns: 1fr;
+  }
+  .proj-links-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: .4rem;
+  }
+}

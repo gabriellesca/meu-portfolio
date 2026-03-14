@@ -7,19 +7,13 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300&display=swap" rel="stylesheet" />
-
-    <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-<!-- Cursor personalizado -->
 <div id="cursor"></div>
 <div id="cursor-ring"></div>
-
-<!-- Partículas de fundo -->
 <div id="particles"></div>
-
-<!-- Botão voltar ao topo -->
 <button id="scroll-top" aria-label="Topo">↑</button>
 
 <!-- ========== NAVBAR ========== -->
@@ -29,6 +23,7 @@
     <li><a href="#sobre">Sobre</a></li>
     <li><a href="#skills">Skills</a></li>
     <li><a href="#projetos">Projetos</a></li>
+    <li><a href="#academico">Acadêmico</a></li>
     <li><a href="#contato">Contato</a></li>
   </ul>
   <a href="mailto:gabysimonegaby@gmail.com" class="btn-pink">Bora conversar 💌</a>
@@ -73,7 +68,7 @@
 
   <div class="hero-visual">
     <div class="float-badge fb1">🧪 QA Engineer</div>
-    <div class="float-badge fb2">✅ 3 projetos publicados</div>
+    <div class="float-badge fb2">✅ 10 projetos no GitHub</div>
     <div class="float-badge fb3">🎓 Pós-grad. em andamento</div>
 
     <div class="profile-card">
@@ -83,10 +78,12 @@
       <div class="profile-chips">
         <span class="chip cp">HTML & CSS</span>
         <span class="chip cy">JavaScript</span>
-        <span class="chip cm">QA Testing</span>
+        <span class="chip cm">Java</span>
+        <span class="chip cb">Python</span>
+        <span class="chip cp">SQL</span>
+        <span class="chip cy">QA Testing</span>
         <span class="chip cb">Git & GitHub</span>
-        <span class="chip cp">APIs REST</span>
-        <span class="chip cb">SQL</span>
+        <span class="chip cm">PHP</span>
       </div>
     </div>
   </div>
@@ -154,7 +151,7 @@
         </div>
         <div class="lang-card">
           <span class="lang-flag">🇺🇸</span>
-          <div class="lang-info"><h5>Inglês</h5><span>Intermediário Alto</span></div>
+          <div class="lang-info"><h5>Inglês</h5><span>Intermediário Alto (B2)</span></div>
         </div>
       </div>
     </div>
@@ -162,24 +159,22 @@
     <div class="reveal d2">
       <div class="stats-grid">
         <div class="stat-card">
-          <div class="stat-num" style="color:var(--yellow)" data-target="3">0</div>
-          <div class="stat-lbl">Projetos publicados no GitHub Pages</div>
+          <div class="stat-num" style="color:var(--yellow)" data-target="10">0</div>
+          <div class="stat-lbl">Projetos no GitHub</div>
         </div>
         <div class="stat-card">
           <div class="stat-num" style="color:var(--pink)" data-target="3">0</div>
           <div class="stat-lbl">Formações acadêmicas</div>
         </div>
         <div class="stat-card">
-          <div class="stat-num" style="color:var(--mint)" data-target="5">0</div>
-          <div class="stat-lbl">Anos de experiência profissional</div>
+          <div class="stat-num" style="color:var(--mint)" data-target="7">0</div>
+          <div class="stat-lbl">Linguagens e tecnologias</div>
         </div>
         <div class="stat-card">
           <div class="stat-num" style="color:var(--rose)">∞</div>
           <div class="stat-lbl">Vontade de aprender coisas novas</div>
         </div>
       </div>
-
-
     </div>
   </div>
 </section>
@@ -191,62 +186,121 @@
   <div class="reveal">
     <p class="eyebrow">O que eu sei</p>
     <h2 class="sec-title">Habilidades &<br>Tecnologias</h2>
-    <p class="sec-sub">Front-end, QA e tudo que conecta os dois mundos.</p>
+    <p class="sec-sub">Front-end, back-end, mobile, banco de dados, QA e tudo que conecta.</p>
   </div>
 
-  <div class="skills-grid">
+  <div class="skills-grid skills-grid-5">
+
     <div class="skill-cat front reveal d1">
       <span class="s-icon">🎨</span>
       <h3 class="s-title">Front-end</h3>
       <div class="pills">
-        <span class="pill">HTML5</span><span class="pill">CSS3</span>
-        <span class="pill">JavaScript</span><span class="pill">CSS Grid</span>
-        <span class="pill">Flexbox</span><span class="pill">Responsivo</span>
-        <span class="pill">Figma</span><span class="pill">Animações CSS</span>
+        <span class="pill">HTML5</span>
+        <span class="pill">CSS3</span>
+        <span class="pill">JavaScript ES6+</span>
+        <span class="pill">CSS Grid</span>
+        <span class="pill">Flexbox</span>
+        <span class="pill">Responsivo</span>
+        <span class="pill">Animações CSS</span>
         <span class="pill">GitHub Pages</span>
+        <span class="pill">Bootstrap</span>
+        <span class="pill">Figma</span>
       </div>
     </div>
-    <div class="skill-cat qa reveal d2">
+
+    <div class="skill-cat backend reveal d2">
+      <span class="s-icon">⚙️</span>
+      <h3 class="s-title">Back-end & Linguagens</h3>
+      <div class="pills">
+        <span class="pill">Java</span>
+        <span class="pill">Python</span>
+        <span class="pill">PHP</span>
+        <span class="pill">XML</span>
+        <span class="pill">APIs REST</span>
+        <span class="pill">OOP</span>
+        <span class="pill">UML</span>
+        <span class="pill">XAMPP</span>
+      </div>
+    </div>
+
+    <div class="skill-cat banco reveal d3">
+      <span class="s-icon">🗄️</span>
+      <h3 class="s-title">Banco de Dados</h3>
+      <div class="pills">
+        <span class="pill">MySQL</span>
+        <span class="pill">MySQL Workbench</span>
+        <span class="pill">DDL</span>
+        <span class="pill">DML</span>
+        <span class="pill">DQL</span>
+        <span class="pill">VIEWs</span>
+        <span class="pill">Diagrama ER</span>
+        <span class="pill">Modelagem</span>
+      </div>
+    </div>
+
+    <div class="skill-cat mobile reveal d4">
+      <span class="s-icon">📱</span>
+      <h3 class="s-title">Mobile & SO</h3>
+      <div class="pills">
+        <span class="pill">Android Studio</span>
+        <span class="pill">Java Android</span>
+        <span class="pill">SDK API 23</span>
+        <span class="pill">Intents</span>
+        <span class="pill">Linux (Ubuntu)</span>
+        <span class="pill">VirtualBox</span>
+        <span class="pill">Terminal / Bash</span>
+      </div>
+    </div>
+
+    <div class="skill-cat qa reveal d5">
       <span class="s-icon">🧪</span>
-      <h3 class="s-title">QA & Qualidade</h3>
+      <h3 class="s-title">QA & Ferramentas</h3>
       <div class="pills">
         <span class="pill">Testes Manuais</span>
-        <span class="pill">QA / Garantia da Qualidade</span>
         <span class="pill">Casos de Teste</span>
-        <span class="pill">APIs REST</span>
+        <span class="pill">QA / Qualidade</span>
+        <span class="pill">Git</span>
+        <span class="pill">GitHub</span>
+        <span class="pill">VS Code</span>
         <span class="pill">Scrum</span>
-        <span class="pill">JavaScript</span>
-        <span class="pill">Python (básico)</span>
-        <span class="pill">SQL / MySQL</span>
-        <span class="pill">Lógica de Programação</span>
-      </div>
-    </div>
-    <div class="skill-cat tools reveal d3">
-      <span class="s-icon">🛠️</span>
-      <h3 class="s-title">Ferramentas</h3>
-      <div class="pills">
-        <span class="pill">Git</span><span class="pill">GitHub</span>
-        <span class="pill">GitHub Desktop</span><span class="pill">VS Code</span>
-        <span class="pill">Figma</span>
         <span class="pill">Conventional Commits</span>
-        <span class="pill">Metodologias Ágeis</span>
+        <span class="pill">Visual Paradigm</span>
       </div>
     </div>
+
   </div>
 </section>
 
 <div class="divider"></div>
 
-<!-- ========== PROJETOS ========== -->
+<!-- ========== PROJETOS PESSOAIS ========== -->
 <section id="projetos">
   <div class="reveal">
     <p class="eyebrow">O que eu construí</p>
-    <h2 class="sec-title">Projetos</h2>
+    <h2 class="sec-title">Projetos Pessoais</h2>
     <p class="sec-sub">Desenvolvidos do zero com HTML, CSS e JavaScript puro.</p>
   </div>
 
   <div class="proj-grid">
+
     <div class="proj-card reveal d1">
+      <div class="proj-cover cv-filmes"><span class="proj-emoji">🎬</span></div>
+      <div class="proj-body">
+        <h3 class="proj-title">Buscador de Filmes</h3>
+        <p class="proj-desc">Buscador com API TMDB em tempo real, filtro por gênero, modal de detalhes, favoritos com LocalStorage e deploy no GitHub Pages.</p>
+        <div class="proj-footer">
+          <div class="proj-techs">
+            <div class="tdot th"></div><div class="tdot tc"></div><div class="tdot tj"></div>
+          </div>
+          <div class="proj-links-row">
+            <a href="https://gabriellesca.github.io/buscador-filmes" target="_blank" class="proj-link">Ver ao vivo →</a>
+            <a href="https://github.com/gabriellesca/buscador-filmes" target="_blank" class="proj-link-gh">GitHub</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="proj-card reveal d2">
       <div class="proj-cover cv-login"><span class="proj-emoji">🔐</span></div>
       <div class="proj-body">
         <h3 class="proj-title">Projeto Login</h3>
@@ -255,12 +309,15 @@
           <div class="proj-techs">
             <div class="tdot th"></div><div class="tdot tc"></div><div class="tdot tj"></div>
           </div>
-          <a href="https://gabriellesca.github.io/login-projeto/" target="_blank" class="proj-link">Ver ao vivo →</a>
+          <div class="proj-links-row">
+            <a href="https://gabriellesca.github.io/login-projeto/" target="_blank" class="proj-link">Ver ao vivo →</a>
+            <a href="https://github.com/gabriellesca/login-projeto" target="_blank" class="proj-link-gh">GitHub</a>
+          </div>
         </div>
       </div>
     </div>
 
-    <div class="proj-card reveal d2">
+    <div class="proj-card reveal d3">
       <div class="proj-cover cv-todo"><span class="proj-emoji">📝</span></div>
       <div class="proj-body">
         <h3 class="proj-title">Minha To-Do List</h3>
@@ -269,12 +326,14 @@
           <div class="proj-techs">
             <div class="tdot th"></div><div class="tdot tc"></div><div class="tdot tj"></div>
           </div>
-          <a href="https://github.com/gabriellesca/Minha-To-Do-List" target="_blank" class="proj-link">Ver no GitHub →</a>
+          <div class="proj-links-row">
+            <a href="https://github.com/gabriellesca/Minha-To-Do-List" target="_blank" class="proj-link">GitHub →</a>
+          </div>
         </div>
       </div>
     </div>
 
-    <div class="proj-card reveal d3">
+    <div class="proj-card reveal d4">
       <div class="proj-cover cv-calc"><span class="proj-emoji">🧮</span></div>
       <div class="proj-body">
         <h3 class="proj-title">Calculadora JS</h3>
@@ -283,10 +342,118 @@
           <div class="proj-techs">
             <div class="tdot th"></div><div class="tdot tc"></div><div class="tdot tj"></div>
           </div>
-          <a href="https://gabriellesca.github.io/projeto-calculadora/" target="_blank" class="proj-link">Ver ao vivo →</a>
+          <div class="proj-links-row">
+            <a href="https://gabriellesca.github.io/projeto-calculadora/" target="_blank" class="proj-link">Ver ao vivo →</a>
+            <a href="https://github.com/gabriellesca/calculadora-js" target="_blank" class="proj-link-gh">GitHub</a>
+          </div>
         </div>
       </div>
     </div>
+
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ========== PROJETOS ACADÊMICOS ========== -->
+<section id="academico">
+  <div class="reveal">
+    <p class="eyebrow">Formação prática</p>
+    <h2 class="sec-title">Projetos Acadêmicos</h2>
+    <p class="sec-sub">Desenvolvidos durante o curso de ADS — cobrindo web, mobile, banco de dados, sistemas operacionais e modelagem de sistemas.</p>
+  </div>
+
+  <div class="acad-grid">
+
+    <a href="https://github.com/gabriellesca/loja-database" target="_blank" class="acad-card reveal d1">
+      <div class="acad-header">
+        <span class="acad-icon">🗄️</span>
+        <div class="acad-tags">
+          <span class="acad-tag tag-sql">MySQL</span>
+          <span class="acad-tag tag-sql">SQL</span>
+        </div>
+      </div>
+      <h3 class="acad-title">Loja Database</h3>
+      <p class="acad-desc">BD relacional completo com 5 tabelas, Foreign Keys, ENUM, 2 VIEWs e diagrama ER. DDL + DML + DQL.</p>
+      <span class="acad-link">Ver no GitHub →</span>
+    </a>
+
+    <a href="https://github.com/gabriellesca/imc-calculator" target="_blank" class="acad-card reveal d2">
+      <div class="acad-header">
+        <span class="acad-icon">🧮</span>
+        <div class="acad-tags">
+          <span class="acad-tag tag-py">Python</span>
+        </div>
+      </div>
+      <h3 class="acad-title">Calculadora de IMC</h3>
+      <p class="acad-desc">Calculadora com classificação OMS em 6 categorias, validação de entrada e execução no Google Cloud Shell.</p>
+      <span class="acad-link">Ver no GitHub →</span>
+    </a>
+
+    <a href="https://github.com/gabriellesca/zodiac-sign-lookup" target="_blank" class="acad-card reveal d3">
+      <div class="acad-header">
+        <span class="acad-icon">♓</span>
+        <div class="acad-tags">
+          <span class="acad-tag tag-php">PHP</span>
+          <span class="acad-tag tag-php">XML</span>
+        </div>
+      </div>
+      <h3 class="acad-title">Consulta de Signo</h3>
+      <p class="acad-desc">App web full-stack que consulta o signo pela data de nascimento. simplexml_load_file(), Bootstrap e lógica de datas em PHP.</p>
+      <span class="acad-link">Ver no GitHub →</span>
+    </a>
+
+    <a href="https://github.com/gabriellesca/hamburgueriaZ" target="_blank" class="acad-card reveal d4">
+      <div class="acad-header">
+        <span class="acad-icon">🍔</span>
+        <div class="acad-tags">
+          <span class="acad-tag tag-java">Java</span>
+          <span class="acad-tag tag-java">Android</span>
+        </div>
+      </div>
+      <h3 class="acad-title">HamburgueriaZ</h3>
+      <p class="acad-desc">App Android de pedidos com adicionais via CheckBox, cálculo em tempo real e envio por Intent de e-mail.</p>
+      <span class="acad-link">Ver no GitHub →</span>
+    </a>
+
+    <a href="https://github.com/gabriellesca/banking-system-uml" target="_blank" class="acad-card reveal d5">
+      <div class="acad-header">
+        <span class="acad-icon">🏦</span>
+        <div class="acad-tags">
+          <span class="acad-tag tag-uml">UML</span>
+        </div>
+      </div>
+      <h3 class="acad-title">Sistema Bancário — UML</h3>
+      <p class="acad-desc">Diagrama de Casos de Uso com atores, fronteiras do sistema e regras de negócio para operações bancárias.</p>
+      <span class="acad-link">Ver no GitHub →</span>
+    </a>
+
+    <a href="https://github.com/gabriellesca/vehicle-rental-uml" target="_blank" class="acad-card reveal d6">
+      <div class="acad-header">
+        <span class="acad-icon">🚗</span>
+        <div class="acad-tags">
+          <span class="acad-tag tag-uml">UML</span>
+          <span class="acad-tag tag-java">Java OOP</span>
+        </div>
+      </div>
+      <h3 class="acad-title">Locação de Veículos — UML</h3>
+      <p class="acad-desc">Diagrama de Classes com 5 entidades, relacionamentos 1:N e N:N e regras de negócio codificadas no modelo.</p>
+      <span class="acad-link">Ver no GitHub →</span>
+    </a>
+
+    <a href="https://github.com/gabriellesca/linux-sysadmin" target="_blank" class="acad-card reveal d7">
+      <div class="acad-header">
+        <span class="acad-icon">🐧</span>
+        <div class="acad-tags">
+          <span class="acad-tag tag-linux">Linux</span>
+          <span class="acad-tag tag-linux">Bash</span>
+        </div>
+      </div>
+      <h3 class="acad-title">Linux Sysadmin</h3>
+      <p class="acad-desc">Prática de administração de sistemas com Ubuntu no VirtualBox. Criação de usuários, navegação de diretórios e histórico de comandos.</p>
+      <span class="acad-link">Ver no GitHub →</span>
+    </a>
+
   </div>
 </section>
 
@@ -332,7 +499,6 @@
   <a href="https://linkedin.com/in/gabriellesca" target="_blank">LinkedIn</a></p>
 </footer>
 
-<!-- 📚 Linkando o arquivo JS externo ! -->
 <script src="script.js"></script>
 </body>
 </html>
