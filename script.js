@@ -1,4 +1,17 @@
 // =============================================
+// 0. FORCE REVEAL FALLBACK
+// Garante visibilidade mesmo se observer falhar
+// =============================================
+window.addEventListener('load', () => {
+  // Força reveal de todos os elementos após 100ms
+  setTimeout(() => {
+    document.querySelectorAll('.reveal').forEach(el => {
+      el.classList.add('visible');
+    });
+  }, 100);
+});
+
+// =============================================
 // 1. CURSOR PERSONALIZADO
 // Movemos os elementos de cursor junto com o mouse.
 // O "anel" segue com suavidade usando interpolação.
@@ -75,7 +88,7 @@ const revealObserver = new IntersectionObserver(entries => {
       revealObserver.unobserve(entry.target); // para de observar depois
     }
   });
-}, { threshold: 0.05 });
+}, { threshold: 0.01 });
 
 document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
 
@@ -100,7 +113,7 @@ const counterObserver = new IntersectionObserver(entries => {
       counterObserver.unobserve(entry.target);
     }
   });
-}, { threshold: 0.15 });
+}, { threshold: 0.1 });
 
 document.querySelectorAll('[data-target]').forEach(el => counterObserver.observe(el));
 
