@@ -75,7 +75,7 @@ const revealObserver = new IntersectionObserver(entries => {
       revealObserver.unobserve(entry.target); // para de observar depois
     }
   });
-}, { threshold: 0.12 });
+}, { threshold: 0.05 });
 
 document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
 
@@ -100,7 +100,7 @@ const counterObserver = new IntersectionObserver(entries => {
       counterObserver.unobserve(entry.target);
     }
   });
-}, { threshold: 0.5 });
+}, { threshold: 0.15 });
 
 document.querySelectorAll('[data-target]').forEach(el => counterObserver.observe(el));
 
