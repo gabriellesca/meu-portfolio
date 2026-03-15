@@ -9,6 +9,15 @@
   <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 
+  <style>
+    /* FORCE HERO VISIBLE */
+    #hero, #hero *, .hero-content, .hero-visual,
+    .hero-name, .hero-role, .hero-desc, .hero-btns,
+    .hero-tag, .hero-status, .profile-card, .float-badge {
+      opacity: 1 !important;
+      transform: none !important;
+    }
+  </style>
 </head>
 <body>
 
@@ -39,8 +48,8 @@
   <div class="deco" style="top:65%;left:12%;font-size:.9rem;animation-delay:-3s;color:var(--blush)">●</div>
   <div class="deco" style="top:25%;right:44%;font-size:1.1rem;animation-delay:-5s;color:var(--yellow)">◆</div>
 
-  <div class="hero-content">
-    <div class="hero-tag">
+  <div class="hero-content" style="opacity:1;transform:none;">
+    <div class="hero-tag" style="opacity:1;transform:none;">
       <span class="pulse-dot"></span>
       Disponível para oportunidades
     </div>
@@ -67,7 +76,7 @@
     </div>
   </div>
 
-  <div class="hero-visual">
+  <div class="hero-visual" style="opacity:1;transform:none;">
     <div class="float-badge fb1">🧪 QA Engineer</div>
     <div class="float-badge fb2">✅ 10 projetos no GitHub</div>
     <div class="float-badge fb3">🎓 Pós-grad. em andamento</div>
