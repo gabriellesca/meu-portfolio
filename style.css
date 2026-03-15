@@ -143,8 +143,7 @@ body.cur-hover #cursor-ring { width:48px; height:48px; border-color:var(--pink);
 /* SECTIONS */
 section {
   position:relative; z-index:1;
-  padding:7rem 5%;
-  width:100%;
+  padding:7rem 5%; max-width:1280px; margin:0 auto;
 }
 .eyebrow {
   font-size:.75rem; font-weight:700; letter-spacing:.18em;
@@ -270,7 +269,7 @@ section {
 @keyframes badge-float { 0%{transform:translateY(0)} 100%{transform:translateY(-10px)} }
 
 /* SOBRE */
-#sobre { background:var(--bg-section); width:100%; }
+#sobre { background:var(--bg-section); }
 .sobre-grid { display:grid; grid-template-columns:1.2fr 1fr; gap:5rem; margin-top:4rem; align-items:start; }
 .sobre-text p { color:var(--txt-muted); margin-bottom:1.1rem; font-size:.97rem; line-height:1.85; }
 .sobre-text strong { color:var(--txt); font-weight:600; }
@@ -377,7 +376,7 @@ section {
 .proj-link-gh:hover { color:var(--txt-muted); }
 
 /* ACADEMICO */
-#academico { background:var(--bg-section); width:100%; }
+#academico { background:var(--bg-section); }
 .acad-grid {
   display:grid; grid-template-columns:repeat(auto-fill,minmax(290px,1fr));
   gap:1.2rem; margin-top:3.5rem;
@@ -412,7 +411,7 @@ section {
 .acad-card:hover .acad-link { letter-spacing:.08em; }
 
 /* CONTATO */
-#contato { background:var(--bg-section); width:100%; }
+#contato { background:var(--bg-section); }
 .contato-grid { display:grid; grid-template-columns:1fr 1.4fr; gap:5rem; margin-top:4rem; align-items:start; }
 .clinks { display:flex; flex-direction:column; gap:.7rem; margin-top:1.8rem; }
 .clink {
@@ -466,16 +465,41 @@ footer a:hover { color:var(--txt-muted); }
   .lang-grid { grid-template-columns:1fr; }
 }
 
-/* REVEAL FALLBACK & FIXES */
-@media (prefers-reduced-motion: reduce) {
-  .reveal { opacity:1 !important; transform:none !important; }
+
+/* ========= CRITICAL FIXES ========= */
+
+/* Hero must be full viewport width */
+#hero {
+  max-width: 100% !important;
+  margin: 0 !important;
+  padding-left: 8% !important;
+  padding-right: 8% !important;
 }
 
-/* Section max-width inner wrapper */
-section > * { max-width:1280px; margin-left:auto; margin-right:auto; }
+/* Sections with dark bg need full width */
+#sobre, #academico, #contato {
+  max-width: 100% !important;
+  margin: 0 !important;
+}
 
-/* Ensure sections stack properly */
-#hero, #sobre, #skills, #projetos, #academico, #contato {
-  display:block;
-  width:100%;
+/* Inner content of full-width sections stays centered */
+#sobre .sobre-grid, #sobre > .reveal,
+#academico .acad-grid, #academico > .reveal,
+#contato .contato-grid, #contato > .reveal {
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 5%;
+}
+
+/* Ensure hero content is always visible */
+.hero-content, .hero-visual {
+  opacity: 1 !important;
+  transform: none !important;
+}
+
+/* Reduce motion fallback */
+@media (prefers-reduced-motion: reduce) {
+  .reveal { opacity: 1 !important; transform: none !important; }
+  .typewriter { animation: none; width: auto; border: none; }
 }
