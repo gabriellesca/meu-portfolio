@@ -1,4 +1,20 @@
 // =============================================
+// 0. INIT — Reveal + Cursor fix
+// =============================================
+document.addEventListener('DOMContentLoaded', () => {
+  // Force all reveal elements visible after short delay
+  setTimeout(() => {
+    document.querySelectorAll('.reveal').forEach(el => el.classList.add('visible'));
+  }, 150);
+
+  // Make cursor visible immediately on any mouse move
+  const cur = document.getElementById('cursor');
+  const ring = document.getElementById('cursor-ring');
+  if (cur) cur.style.opacity = '1';
+  if (ring) ring.style.opacity = '1';
+});
+
+// =============================================
 // 0. FORCE REVEAL FALLBACK
 // Garante visibilidade mesmo se observer falhar
 // =============================================
@@ -88,7 +104,7 @@ const revealObserver = new IntersectionObserver(entries => {
       revealObserver.unobserve(entry.target); // para de observar depois
     }
   });
-}, { threshold: 0.01 });
+}, { threshold: 0.02 });
 
 document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
 
